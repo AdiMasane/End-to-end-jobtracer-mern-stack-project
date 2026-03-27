@@ -10,7 +10,7 @@ dotenv.config()
 
 const app = express()   // ✅ app created here
 app.use(cors({
-  origin: "https://end-to-end-jobtracer-mern-stack-project-8pb17jwfo.vercel.app/"
+  origin: "https://end-to-end-jobtracer-mern-stack-pro.vercel.app/"
 }));
 app.use(express.json())
 

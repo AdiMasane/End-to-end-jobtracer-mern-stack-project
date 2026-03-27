@@ -9,8 +9,9 @@ import jobRoutes from "./routes/jobRoutes.js"
 dotenv.config()
 
 const app = express()   // ✅ app created here
-
-app.use(cors())
+app.use(cors({
+  origin: "https://end-to-end-jobtracer-mern-stack-project-8pb17jwfo.vercel.app/"
+}));
 app.use(express.json())
 
 connectDB()
